@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca", "Biblioteca\Biblioteca.csproj", "{93956899-4AF1-415E-A521-28CD06C0A587}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAlunos", "WindowsFormsAlunos\WindowsFormsAlunos.csproj", "{FF7CABEE-8043-4546-B6C2-6EF4549F03E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93956899-4AF1-415E-A521-28CD06C0A587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93956899-4AF1-415E-A521-28CD06C0A587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93956899-4AF1-415E-A521-28CD06C0A587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93956899-4AF1-415E-A521-28CD06C0A587}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7CABEE-8043-4546-B6C2-6EF4549F03E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7CABEE-8043-4546-B6C2-6EF4549F03E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7CABEE-8043-4546-B6C2-6EF4549F03E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7CABEE-8043-4546-B6C2-6EF4549F03E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
