@@ -137,6 +137,7 @@
             BtnEditarAluno.TabIndex = 10;
             BtnEditarAluno.Text = "Editar aluno selecionado";
             BtnEditarAluno.UseVisualStyleBackColor = true;
+            BtnEditarAluno.Click += BtnEditarAluno_Click;
             // 
             // Form1
             // 
