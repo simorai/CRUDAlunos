@@ -33,7 +33,6 @@
             TxtApelido = new TextBox();
             BtnGuardar = new Button();
             BtnCancelar = new Button();
-            txtDisciplina = new TextBox();
             SuspendLayout();
             // 
             // TxtIdAluno
@@ -79,19 +78,11 @@
             BtnCancelar.UseVisualStyleBackColor = true;
             BtnCancelar.Click += BtnCancelar_Click;
             // 
-            // txtDisciplina
-            // 
-            txtDisciplina.Location = new Point(54, 230);
-            txtDisciplina.Name = "txtDisciplina";
-            txtDisciplina.Size = new Size(426, 31);
-            txtDisciplina.TabIndex = 5;
-            // 
             // EditarAlunoForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(txtDisciplina);
             Controls.Add(BtnCancelar);
             Controls.Add(BtnGuardar);
             Controls.Add(TxtApelido);
@@ -110,6 +101,5 @@
         private TextBox TxtApelido;
         private Button BtnGuardar;
         private Button BtnCancelar;
-        private TextBox txtDisciplina;
     }
 }

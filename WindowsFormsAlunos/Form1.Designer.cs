@@ -39,15 +39,6 @@
             AlunosListBox = new ListBox();
             BtnApagarAluno = new Button();
             BtnEditarAluno = new Button();
-            label4 = new Label();
-            txtNomeDisciplina = new TextBox();
-            label5 = new Label();
-            txtIdDisciplina = new TextBox();
-            btnGuardarDisciplina = new Button();
-            BtnLimparDisciplina = new Button();
-            DisciplinasListBox = new ListBox();
-            BtnEditarDisciplina = new Button();
-            BtnApagarDisciplina = new Button();
             SuspendLayout();
             // 
             // label1
@@ -71,7 +62,7 @@
             // 
             TxtNomeAluno.Location = new Point(157, 84);
             TxtNomeAluno.Name = "TxtNomeAluno";
-            TxtNomeAluno.Size = new Size(125, 31);
+            TxtNomeAluno.Size = new Size(321, 31);
             TxtNomeAluno.TabIndex = 2;
             // 
             // label2
@@ -96,7 +87,7 @@
             // 
             TxtApelido.Location = new Point(157, 130);
             TxtApelido.Name = "TxtApelido";
-            TxtApelido.Size = new Size(125, 31);
+            TxtApelido.Size = new Size(321, 31);
             TxtApelido.TabIndex = 5;
             // 
             // BtnGuardar
@@ -149,101 +140,12 @@
             BtnEditarAluno.UseVisualStyleBackColor = true;
             BtnEditarAluno.Click += BtnEditarAluno_Click;
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(631, 96);
-            label4.Name = "label4";
-            label4.Size = new Size(91, 25);
-            label4.TabIndex = 11;
-            label4.Text = "Disciplina:";
-            // 
-            // txtNomeDisciplina
-            // 
-            txtNomeDisciplina.Location = new Point(743, 93);
-            txtNomeDisciplina.Name = "txtNomeDisciplina";
-            txtNomeDisciplina.Size = new Size(367, 31);
-            txtNomeDisciplina.TabIndex = 12;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(631, 37);
-            label5.Name = "label5";
-            label5.Size = new Size(106, 25);
-            label5.TabIndex = 13;
-            label5.Text = "ID Disciplna";
-            // 
-            // txtIdDisciplina
-            // 
-            txtIdDisciplina.Enabled = false;
-            txtIdDisciplina.Location = new Point(743, 37);
-            txtIdDisciplina.Name = "txtIdDisciplina";
-            txtIdDisciplina.Size = new Size(86, 31);
-            txtIdDisciplina.TabIndex = 14;
-            // 
-            // btnGuardarDisciplina
-            // 
-            btnGuardarDisciplina.Location = new Point(678, 196);
-            btnGuardarDisciplina.Name = "btnGuardarDisciplina";
-            btnGuardarDisciplina.Size = new Size(94, 29);
-            btnGuardarDisciplina.TabIndex = 15;
-            btnGuardarDisciplina.Text = "Guardar";
-            btnGuardarDisciplina.UseVisualStyleBackColor = true;
-            btnGuardarDisciplina.Click += btnGuardarDisciplina_Click;
-            // 
-            // BtnLimparDisciplina
-            // 
-            BtnLimparDisciplina.Location = new Point(790, 196);
-            BtnLimparDisciplina.Name = "BtnLimparDisciplina";
-            BtnLimparDisciplina.Size = new Size(94, 29);
-            BtnLimparDisciplina.TabIndex = 16;
-            BtnLimparDisciplina.Text = "cancelar";
-            BtnLimparDisciplina.UseVisualStyleBackColor = true;
-            // 
-            // DisciplinasListBox
-            // 
-            DisciplinasListBox.BackColor = SystemColors.Info;
-            DisciplinasListBox.FormattingEnabled = true;
-            DisciplinasListBox.ItemHeight = 25;
-            DisciplinasListBox.Location = new Point(638, 285);
-            DisciplinasListBox.Name = "DisciplinasListBox";
-            DisciplinasListBox.Size = new Size(471, 104);
-            DisciplinasListBox.TabIndex = 17;
-            // 
-            // BtnEditarDisciplina
-            // 
-            BtnEditarDisciplina.Location = new Point(882, 404);
-            BtnEditarDisciplina.Name = "BtnEditarDisciplina";
-            BtnEditarDisciplina.Size = new Size(238, 35);
-            BtnEditarDisciplina.TabIndex = 19;
-            BtnEditarDisciplina.Text = "Editar Disciplina";
-            BtnEditarDisciplina.UseVisualStyleBackColor = true;
-            // 
-            // BtnApagarDisciplina
-            // 
-            BtnApagarDisciplina.Location = new Point(638, 404);
-            BtnApagarDisciplina.Name = "BtnApagarDisciplina";
-            BtnApagarDisciplina.Size = new Size(238, 35);
-            BtnApagarDisciplina.TabIndex = 18;
-            BtnApagarDisciplina.Text = "Apagar disciplina";
-            BtnApagarDisciplina.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(1129, 566);
-            Controls.Add(BtnEditarDisciplina);
-            Controls.Add(BtnApagarDisciplina);
-            Controls.Add(DisciplinasListBox);
-            Controls.Add(BtnLimparDisciplina);
-            Controls.Add(btnGuardarDisciplina);
-            Controls.Add(txtIdDisciplina);
-            Controls.Add(label5);
-            Controls.Add(txtNomeDisciplina);
-            Controls.Add(label4);
+            ClientSize = new Size(845, 469);
             Controls.Add(BtnEditarAluno);
             Controls.Add(BtnApagarAluno);
             Controls.Add(AlunosListBox);
@@ -274,14 +176,5 @@
         private ListBox AlunosListBox;
         private Button BtnApagarAluno;
         private Button BtnEditarAluno;
-        private Label label4;
-        private TextBox txtNomeDisciplina;
-        private Label label5;
-        private TextBox txtIdDisciplina;
-        private Button btnGuardarDisciplina;
-        private Button BtnLimparDisciplina;
-        private ListBox DisciplinasListBox;
-        private Button BtnEditarDisciplina;
-        private Button BtnApagarDisciplina;
     }
 }

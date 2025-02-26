@@ -13,18 +13,14 @@ namespace WindowsFormsAlunos
         /// Esta coleção mantém todos os alunos adicionados durante a execução do programa.
         /// </summary>
         List<Aluno> Alunos;
-        /// <summary>
-        /// Lista que armazena os objetos Disciplina.
-        /// Esta coleção mantém todas as Disciplinas adicionados durante a execução do programa.
-        /// </summary>
-        List<Disciplinas> Disciplinas;
+
         /// <summary>
         /// Contador para gerar IDs únicos para os alunos.
         /// Este contador é incrementado cada vez que um novo aluno é adicionado,
         /// garantindo que cada aluno tenha um ID único.
         /// </summary>
         int contaAlunos = 1;
-        int contaDisciplinas = 1;
+
         /// <summary>
         /// Construtor do formulário.
         /// Inicializa a lista de Alunos e configura os componentes iniciais do formulário.
@@ -32,10 +28,9 @@ namespace WindowsFormsAlunos
         public Form1()
         {
             Alunos = new List<Aluno>();
-            Disciplinas = new List<Disciplinas>();
             InitializeComponent();
             TxtIdAluno.Text = contaAlunos.ToString();
-            txtIdDisciplina.Text = contaDisciplinas.ToString();
+
         }
         /// <summary>
         /// Manipula o evento de clique no botão Guardar.
@@ -178,31 +173,6 @@ namespace WindowsFormsAlunos
                 EditarAlunoForm editarAlunoForm = new EditarAlunoForm(this, editado);
                 editarAlunoForm.Show();
             }
-        }
-
-        private void btnGuardarDisciplina_Click(object sender, EventArgs e)
-        {
-            // Cria uma nova disciplina com os dados fornecidos
-            Disciplinas novaDisciplina;
-            if (ValidaForm())
-            {
-                novaDisciplina = new Disciplinas
-                {
-                    Id = contaDisciplinas,
-                    Disciplina = txtNomeDisciplina.Text,
-                    
-                };
-                Disciplinas.Add(novaDisciplina);
-                contaDisciplinas++;
-                initLista();
-            }
-            else
-            {
-                // Exibe uma mensagem de erro se a validação falhar
-                MessageBox.Show("Preencha os dados corretamente e tente novamente", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            txtNomeDisciplina.Text = string.Empty;            
-            txtIdDisciplina.Text = contaDisciplinas.ToString();
         }
     }
 }
